@@ -12,8 +12,8 @@ import StringContants from "../../Constants/StringContants";
 import { styles } from "./PostDetailsStyle";
 export default PostDetails = ({ navigation, route }) => {
   const item = route.params.item;
-  function goToLocation() {
-    open({ latitude: 30.71923776993991, longitude: 76.81066575861746 });
+  function goToLocation(lat,long) {
+    open({ latitude: lat, longitude:long });
   }
   return (
     <View style={styles.container}>
@@ -36,7 +36,7 @@ export default PostDetails = ({ navigation, route }) => {
           <Text style={styles.time}>{item.time}</Text>
         </View>
         <View style={styles.viewmap}>
-          <ButtonComp onPress={goToLocation} title={StringContants.VIEW_MAP} />
+          <ButtonComp onPress={()=>goToLocation(item.lat,item.long)} title={StringContants.VIEW_MAP} />
         </View>
       </ImageBackground>
     </View>

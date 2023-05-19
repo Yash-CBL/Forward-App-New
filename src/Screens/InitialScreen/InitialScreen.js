@@ -12,7 +12,8 @@ import StringContants from "../../Constants/StringContants";
 import { styles } from "./InitialScreenStyle";
 import { useEffect } from "react";
 import { sendstatus } from "../../redux/actions/stackAction";
-import { savelogindata, senduserdata } from "../../redux/actions/saveuserdata";
+import { savelogindata} from "../../redux/actions/saveuserdata";
+import { SendAsyncData } from "../../utils/utils";
 
 export default InitialScreen = ({ navigation }) => {
   useEffect(()=>{
@@ -22,10 +23,12 @@ GoogleSignin.configure()
     try {
       await GoogleSignin.hasPlayServices();
       const userInfo = await GoogleSignin.signIn();
-  console.log("user info",userInfo) 
   if(!!userInfo){
-    savelogindata(userInfo.user)
+    const userdata={"Email":userInfo.user.email,"First_Name":userInfo.user.givenName,"Last_Name":userInfo.user.familyName,"Photo":userInfo.scopes,"ID":userInfo.user.id}
     sendstatus(true)
+    savelogindata(userdata)
+    SendAsyncData("Userdata",userdata)
+
   }
     } catch (error) {
       if (error.code === statusCodes.SIGN_IN_CANCELLED) {

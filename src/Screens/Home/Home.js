@@ -18,38 +18,44 @@ export default Home = ({ navigation }) => {
     {
       Id: "1",
       personimg: ImagePath.applelogo,
-      personName: "Russell Gordon",
-      personaddress: "Sector 28D, Chandigarh",
+      personName: "Yash Chouhan",
+      personaddress: "Sukhna Lake ,Sector 1, Chandigarh",
       bannerimg: ImagePath.banner,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in turpis luctus.",
       time: "1hr ago",
-      comment: "1224",
-      like: "44678",
+      comment: "124",
+      like: "478",
+      lat:30.744725190844328, 
+      long:76.81061878237743
     },
     {
       Id: "2",
       personimg: ImagePath.googlelogo,
-      personName: "Lelia Walker",
-      personaddress: "Sector 28D, Chandigarh",
+      personName: "Natesh Kumar",
+      personaddress: "Elante Mall, Chandigarh",
       bannerimg: ImagePath.banner,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in turpis luctus.",
       time: "4hr ago",
-      comment: "1224",
-      like: "44678",
+      comment: "24",
+      like: "678",
+      lat:30.705428401754855, 
+      long:76.80119172285497
     },
     {
       Id: "3",
       personimg: ImagePath.googlelogo,
       personName: "Sheetal",
-      personaddress: "Sector 28D, Chandigarh",
+      personaddress: "Shimla,Himachal Pradesh",
       bannerimg: ImagePath.banner,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in turpis luctus.",
       time: "2hr ago",
-      comment: "1224",
-      like: "44678",
+      comment: "714",
+      like: "4678",
+      lat:31.103203252248896,
+      long: 77.17378309731714
     },
   ];
 
