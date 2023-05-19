@@ -5,7 +5,12 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "3ffb3bfd-8ef9-4894-afe5-7cdeca5397b7"
+      }
+    }
   },
   "name": "Forward"
 }
