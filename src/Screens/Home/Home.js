@@ -20,7 +20,7 @@ export default Home = ({ navigation }) => {
       personimg: ImagePath.applelogo,
       personName: "Yash Chouhan",
       personaddress: "Sukhna Lake ,Sector 1, Chandigarh",
-      bannerimg: ImagePath.banner,
+      bannerimg: ImagePath.lake,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in turpis luctus.",
       time: "1hr ago",
@@ -34,7 +34,7 @@ export default Home = ({ navigation }) => {
       personimg: ImagePath.googlelogo,
       personName: "Natesh Kumar",
       personaddress: "Elante Mall, Chandigarh",
-      bannerimg: ImagePath.banner,
+      bannerimg: ImagePath.mall,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in turpis luctus.",
       time: "4hr ago",
@@ -48,7 +48,7 @@ export default Home = ({ navigation }) => {
       personimg: ImagePath.googlelogo,
       personName: "Sheetal",
       personaddress: "Shimla,Himachal Pradesh",
-      bannerimg: ImagePath.banner,
+      bannerimg: ImagePath.shimla,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in turpis luctus.",
       time: "2hr ago",

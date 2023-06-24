@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import Routes from "./src/Navigations/Routes";
 import { sendstatus } from "./src/redux/actions/stackAction";
 import { store } from "./src/redux/store";
-import { GetAsyncData } from "./src/utils/utils";
+import { GetAsyncData, getfcm } from "./src/utils/utils";
 import { cleanLoginData, savelogindata } from "./src/redux/actions/saveuserdata";
 export default function App() {
   useEffect(() => {

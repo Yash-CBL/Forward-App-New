@@ -1,4 +1,6 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import messaging, { firebase } from '@react-native-firebase/messaging';
+
 import axios from "axios";
 export const apiReq = (url, method, header, data) => {
   return new Promise((resolve, reject) => {
@@ -50,3 +52,17 @@ export const SendAsyncData = async (key, value) => {
 export const ClearAsyncData = async (key) => {
   await AsyncStorage.removeItem(key);
 };
+
+
+//getfirebase token
+export const getfcm=()=>{
+
+firebase.messaging().getToken()
+  .then(fcmToken => {
+    if (fcmToken) {
+      console.log(fcmToken,'fcmtoken')
+    } else {
+      // user doesn't have a device token yet
+    } 
+  });
+}

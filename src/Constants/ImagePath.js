@@ -23,5 +23,8 @@ icSignout:require('../assets/images/ic_logout.png'),
 icPlus:require('../assets/images/ic_plus.png'),
 icHomeActive:require('../assets/images/ic_red_home.png'),
 icAddActive:require('../assets/images/ic_red_add.png'),
-icBlueTick:require('../assets/images/ic_blue_tick.png')
+icBlueTick:require('../assets/images/ic_blue_tick.png'),
+lake:require('../assets/images/lake.jpg'),
+mall:require('../assets/images/mall.jpeg'),
+shimla:require('../assets/images/shimla.jpg')
 }
